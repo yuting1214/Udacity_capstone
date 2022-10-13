@@ -15,3 +15,10 @@ You'll have access to a third dataset with attributes from targets of a mail ord
 
 3. Kaggle Competition
 Once you've chosen a model, you'll use it to make predictions on the campaign data as part of a Kaggle Competition. You'll rank the individuals by how likely they are to convert to being a customer, and see how your modeling skills measure up against your fellow students.
+
+# Modeling(Imbalanced classification)
+
+Here we provid five type of solutions to address the issues of imbalanced data.
+These solutions related to the concepts of AutoML(Autogluon), Anomaly Detection, Over-sampling, and Ensemble Different Resampled Datasets.
+
+## 
