@@ -35,6 +35,9 @@ Once you've chosen a model, you'll use it to make predictions on the campaign da
     * Segment: If the closed distance between the centers meet the threshold, assign the cluster to each observation.
 
 Finding:
+![Customer](https://github.com/yuting1214/Udacity_capstone/blob/main/plots/customer.png)
+![Population](https://github.com/yuting1214/Udacity_capstone/blob/main/plots/popu.png)
+
 1. Most of existing and potential customers are belong to cluster 1. Therefore, to promote the business, the stakeholders should focus on the customers in this segment. 
 2. Around 30% of population are not assigned to any clusters. We could further check which cluster is the most closed one. And if there are some variables controlable, we could adjust these factors to make these people similar to the customers thereby increasing the chance of acquring these potential customers.
 
