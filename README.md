@@ -16,6 +16,21 @@ You'll have access to a third dataset with attributes from targets of a mail ord
 3. Kaggle Competition
 Once you've chosen a model, you'll use it to make predictions on the campaign data as part of a Kaggle Competition. You'll rank the individuals by how likely they are to convert to being a customer, and see how your modeling skills measure up against your fellow students.
 
+## Details in each step
+
+### 1. Customer Segmentation Report
+
+1. Data preprocessing: 
+    * Filter out some columns(too many missing values, erroneous recording
+    * Impute missing values(Mean for numerical, Mode for categorical
+    * Transform data(Standardization, One-hot encoding
+2. Dimensionality reduction
+    * PCA: reduce dimension while keeping the accounted variance
+    * Scree plot: Select number of Principle Components
+3. Clustering:
+    * K-mean: Cluster the existing customers
+    * 
+
 # Modeling(Imbalanced classification)
 
 Here we provid five type of solutions to address the issues of imbalanced data.
