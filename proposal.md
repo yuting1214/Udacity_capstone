@@ -1,7 +1,7 @@
 # Domain background
-In pre-digital era, customer segementing was done solely by salesmans, who approached the customers. By getting to know more about their customers, they could collect more than enough information about demographics, their request and painstaking issues, and their overall mood based on non-verbal communication. This made it possible to immediately address any concerns about the products, matching the words and expressions used by the customer, being able to upsell them on the spot, and reinforcing their purchase intent. 
+In the pre-digital era, customer segmenting was done solely by salesmen, who approached the customers. By getting to know more about their customers, they could collect more than enough information about demographics, their requests and painstaking issues, and their overall mood based on non-verbal communication. This made it possible to immediately address any concerns about the products, matching the words and expressions used by the customer, being able to upsell them on the spot, and reinforcing their purchase intent. 
 
-When the customer has to deal with an online experience, all of this has to be replaced, and scaled. And based on what other customers in the store previously bought, in conjunction with this particular search, cross- and upsell offers could be made with great confidence. Part of the demographic information is readily available as soon as someone signs up – most times you will know their age, location and whatever data you ask for. There is an incredible amount of data generated from all these interactions – and machine learning is what makes it possible to assess behaviors to ascertain patterns. These patterns help you make sense of data sets and make more effective marketing decisions. For example, you can create ultra-targeted campaigns with the most relevant messages, and increase your conversion rate by offering customers exactly what they are looking for.
+When the customer has to deal with an online experience, all of this has to be replaced and scaled. And based on what other customers in the store previously bought, in conjunction with this particular search, cross- and upsell offers could be made with great confidence. Part of the demographic information is readily available as soon as someone signs up – most times you will know their age, location, and whatever data you ask for. There is an incredible amount of data generated from all these interactions – and machine learning is what makes it possible to assess behaviors to ascertain patterns. These patterns help you make sense of data sets and make more effective marketing decisions. For example, you can create ultra-targeted campaigns with the most relevant messages, and increase your conversion rate by offering customers exactly what they are looking for.
 
 In our project, we try to utilize the data to find the relationship between existing customers and potential customers to reduce the cost of customer acquisition. Since demographic information is usually high-dimensional and intractable, machine learning techniques provide handy and automatic solutions 
 to detect the hidden patterns behind the data. These patterns could help stakeholders form feasible solutions to promote business.
@@ -10,28 +10,28 @@ to detect the hidden patterns behind the data. These patterns could help stakeho
 
 Part 1. Customers Segmentation: related to dimensionality reduction, clustering, and segmentation.
 
-* Quantifiable:
-* Measurable:
-* Replicable:
+* Quantifiable: Group the customers with similar demographic traits with algorithmic measurements provided by unsupervised learning. 
+* Measurable: Once established the clusters, we could further compare the purchase behavior in each cluster to test the validity of the clustering
+* Replicable: The trained model could be applied to future customers and keep monitoring the variations of the structure of previously constructed clusters.
 
 Part 2. Predict potential customers: related to the problem of imbalanced label prediction.
 
-* Quantifiable:
-* Measurable:
-* Replicable:
+* Quantifiable: Predict the probabilities of becoming new customers based on demographic information.
+* Measurable: Compare the actual acquired customers and predicted potential customers.
+* Replicable: The trained model could adapt to new incoming data and keep monitoring the model's performance once the model gets deployed.
 
 
 # Solution statement
 
 For Part 1.,
-1. Use unsupervised learning methods for dimensionality reduction to extract the transformed features while reducing the number of input variables 
-2. Use unsupervised learning methods to cluster the customers.
+1. Use an unsupervised learning method(PCA) for dimensionality reduction to extract the transformed features while reducing the number of input variables 
+2. Use an unsupervised learning method(K-means) to cluster the customers.
 3. Use the Euclidean distance metric to measure the similarities between existing customers and the population.
 
 For Part 2., 
 1. Data Preprocessing to adjust the data format applicable to the models.
-2. Over-sampling technique to address the issues of imbalanced labels.
-3. Supervised learning models to predict the probabilities of becoming potential customers based on preprocessed information.
+2. Over-sampling(SMOTE) technique to address the issues of imbalanced labels.
+3. Supervised learning models(Logistic Regression & XGBoost) to predict the probabilities of becoming potential customers based on preprocessed information.
 
 # Datasets
 
@@ -54,9 +54,9 @@ For Part 2., use
 
 # Benchmark model
 
-For Part 1., use the subset of columns from original data to segment the customers. And compare the benchemark model with the following unsupervised learning methods.
+For Part 1., use the subset of columns from the original data to segment the customers. And compare the benchmark model with the following unsupervised learning methods.
 
-For Part 2., start from a logistice regression model without any treatment on the issue of imbalanced labels. And compare the benchemark model with the following learning supervised methods with adds-on treatments.
+For Part 2., start with a logistic regression model without any treatment on the issue of imbalanced labels. And compare the benchmark model with the following learning supervised methods with adds-on treatments.
 
 # Evaluation metrics
 
