@@ -1,13 +1,25 @@
 # Domain background
+In pre-digital era, customer segementing was done solely by salesmans, who approached the customers. By getting to know more about their customers, they could collect more than enough information about demographics, their request and painstaking issues, and their overall mood based on non-verbal communication. This made it possible to immediately address any concerns about the products, matching the words and expressions used by the customer, being able to upsell them on the spot, and reinforcing their purchase intent. 
 
-Nowadays, numerous e-commerce or sales companies have data about their customers and access to demographic information for the general population. They're eager to utilize the data to find the relationship between existing customers and potential customers to reduce the cost of customer acquisition. Since demographic information is usually high-dimensional and intractable, machine learning techniques provide handy and automatic solutions 
-to detect the hidden patterns behind the data. These patterns could help them form feasible solutions to promote business.
+When the customer has to deal with an online experience, all of this has to be replaced, and scaled. And based on what other customers in the store previously bought, in conjunction with this particular search, cross- and upsell offers could be made with great confidence. Part of the demographic information is readily available as soon as someone signs up – most times you will know their age, location and whatever data you ask for. There is an incredible amount of data generated from all these interactions – and machine learning is what makes it possible to assess behaviors to ascertain patterns. These patterns help you make sense of data sets and make more effective marketing decisions. For example, you can create ultra-targeted campaigns with the most relevant messages, and increase your conversion rate by offering customers exactly what they are looking for.
+
+In our project, we try to utilize the data to find the relationship between existing customers and potential customers to reduce the cost of customer acquisition. Since demographic information is usually high-dimensional and intractable, machine learning techniques provide handy and automatic solutions 
+to detect the hidden patterns behind the data. These patterns could help stakeholders form feasible solutions to promote business.
 
 # Problem Statement
 
 Part 1. Customers Segmentation: related to dimensionality reduction, clustering, and segmentation.
 
+* Quantifiable:
+* Measurable:
+* Replicable:
+
 Part 2. Predict potential customers: related to the problem of imbalanced label prediction.
+
+* Quantifiable:
+* Measurable:
+* Replicable:
+
 
 # Solution statement
 
@@ -90,3 +102,5 @@ These solutions related to the concepts of AutoML(Autogluon), Anomaly Detection,
     * Ensemble of samplers: use the models with the mechanism to adjust the imbalanced labels during training
     * Anomaly Detection: transform the original problem, imbalanced classification, as an anomaly detection problem.
 
+# Reference:
+https://www.prefixbox.com/blog/machine-learning-for-ecommerce/#ee8af4c53d02
