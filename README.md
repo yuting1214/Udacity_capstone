@@ -28,11 +28,15 @@ Once you've chosen a model, you'll use it to make predictions on the campaign da
     * PCA: reduce dimension while keeping the accounted variance
     * Scree plot: Select number of Principle Components
 3. Clustering:
-    * K-mean: Cluster the existing customers.(K=5)
+    * K-mean: Cluster the existing customers.(K=3)
     * Centers: Construct representative centers from the clusters
 4. Categorize population:
     * Distance: Calculate the distance between the characteristics of each person and centers
     * Segment: If the closed distance between the centers meet the threshold, assign the cluster to each observation.
+
+Finding:
+1. Most of existing and potential customers are belong to cluster 1. Therefore, to promote the business, the stakeholders should focus on the customers in this segment. 
+2. Around 30% of population are not assigned to any clusters. We could further check which cluster is the most closed one. And if there are some variables controlable, we could adjust these factors to make these people similar to the customers thereby increasing the chance of acquring these potential customers.
 
 # Modeling(Imbalanced classification)
 
