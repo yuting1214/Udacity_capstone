@@ -44,15 +44,17 @@ For Part 2., use
 
 For Part 1., PCA for dimensionality reduction; K-mean for clustering.
 
-For Part 2., Supervised learning models with some adjustments to deal with the issue of imbalanced labels.
+For Part 2., Supervised learning models(Tree-based models) with some adjustments to deal with the issue of imbalanced labels.
 
 # Evaluation metrics
 
 For Part 1.,
 
-a valid evaluation metric could be any reasonable decisions from the processing of data, so there is no clear metric to measure the success.
+1. PCA: proportion of explained variance as metric
+2. K-Mean: Inertia(sum of square of between centers distances)
 
-For Part 2. Since it's a binary classification problem, use AUC as a measurement of models' performance/
+For Part 2. 
+1. Binary classification: AUC(Area Under the ROC Curve) and ROC curve (receiver operating characteristic curve).
 
 # Outline:
 
@@ -74,7 +76,7 @@ Part 1. Customers Segmentation:
 
 Part 2. Predict potential customers
 
-Here we provide five types of methods to address the issues of imbalanced data.
+Here we provide four types of methods to address the issues of imbalanced data.
 These solutions related to the concepts of AutoML(Autogluon), Anomaly Detection, Over-sampling, and Ensemble Different Resampled Datasets.
 
 1. Data preprocessing: 
@@ -82,5 +84,8 @@ These solutions related to the concepts of AutoML(Autogluon), Anomaly Detection,
     * Impute missing values(Mean for numerical, Mode for categorical
     * Transform data(Standardization, One-hot encoding
 2. Modeling:
-    * 
+    * AutoGluon: automatic machine learning to train models
+    * Scikit-learn: use off-the-shelf tree-based models from scikit-learn
+    * Ensemble of samplers: use the models with the mechanism to adjust the imbalanced labels during training
+    * Anomaly Detection: transform the original problem, imbalanced classification, as anomaly dection problem.
 
