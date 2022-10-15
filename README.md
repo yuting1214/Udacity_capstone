@@ -40,7 +40,28 @@ Finding:
 
 # Modeling(Imbalanced classification)
 
-Here we provid five type of solutions to address the issues of imbalanced data.
+Here we provid five types of methods to address the issues of imbalanced data.
 These solutions related to the concepts of AutoML(Autogluon), Anomaly Detection, Over-sampling, and Ensemble Different Resampled Datasets.
 
-## 
+Summary of model performance.
+
+|  0 |      Valina Model | Filter col, Impute mean & mode, Standard & One... |             Logistic Reg |                   None | 0.65 | 0.50 |  NaN |
+|---:|------------------:|--------------------------------------------------:|-------------------------:|-----------------------:|-----:|-----:|-----:|
+|  1 |      Valina Model | Filter col, Impute mean & mode, Standard & One... |             Logistic Reg |           Class Weight | 0.63 | 0.57 |  NaN |
+|  2 |      Valina Model | Filter col, Impute mean & mode, Standard & One... |             Logistic Reg |          Over-Sampling | 0.63 | 0.57 |  NaN |
+|  3 |      Valina Model | Filter col, Impute mean & mode, Standard & One... |             Logistic Reg |                  SMOTE | 0.64 | 0.57 |  NaN |
+|  4 |      Valina Model | Filter col, Impute mean & mode, Standard & One... |                  XGBoost | 5-CV grid & Prob Calib | 0.72 | 0.70 | 0.03 |
+|  5 |         AutoGluon |                                 Auto from package |                 LightGBM |             Prob Calib | 0.73 | 0.69 | 0.02 |
+|  6 |         AutoGluon |                                 Auto from package |                 CatBoost |             Prob Calib | 0.73 | 0.70 | 0.03 |
+|  7 |  Ensemble Sampler | Filter col, Impute mean & mode, Standard & One... |   BalancedBaggingDecTree |                   None | 0.66 | 0.66 | 0.03 |
+|  8 |  Ensemble Sampler | Filter col, Impute mean & mode, Standard & One... | BalancedBaggingRanForest |                   None | 0.65 | 0.65 | 0.02 |
+|  9 | Anomaly Detection | Filter col, Impute mean & mode, Standard & One... |               Iso Forest |                   None |  NaN | 0.51 | 0.02 |
+| 10 | Anomaly Detection | Filter col, Impute mean & mode, Standard & One... |            One-class SVM |                   None |  NaN | 0.48 | 0.02 |
+
+Based on the table, use CatBoost as main predictive model when testing new samples.
+
+# Kaggle 
+
+https://www.kaggle.com/competitions/udacity-arvato-identify-customers/rules
+
+Currently not available.
