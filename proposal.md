@@ -54,9 +54,9 @@ For Part 2., use
 
 # Benchmark model
 
-For Part 1., PCA for dimensionality reduction; K-mean for clustering.
+For Part 1., use the subset of columns from original data to segment the customers. And compare the benchemark model with the following unsupervised learning methods.
 
-For Part 2., Supervised learning models(Tree-based models) with some adjustments to deal with the issue of imbalanced labels.
+For Part 2., start from a logistice regression model without any treatment on the issue of imbalanced labels. And compare the benchemark model with the following learning supervised methods with adds-on treatments.
 
 # Evaluation metrics
 
