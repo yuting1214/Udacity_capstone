@@ -6,16 +6,16 @@ Part 2. Predict potential customers
 
 # Domain background
 
-Many e-commerce or sales companies have data about customers and the access to the demographics information for the general population. 
-They want to find the relationship between the existing customers and potential customers to reduce the cost of customers acquisition.
-Since demographics information are usually high dimensional and intractable, machine learning techniques provide handy and automatic solutions 
-to detect the hidden patterns behind the data. These pattern could help us form feasible solutions to promote business. 
+Many e-commerce or sales companies have data about their customers and access to demographic information for the general population. 
+They want to find the relationship between the existing customers and potential customers to reduce the cost of customer acquisition.
+Since demographic information is usually high-dimensional and intractable, machine learning techniques provide handy and automatic solutions 
+to detect the hidden patterns behind the data. These patterns could help us form feasible solutions to promote business. 
 
 # Problem Statement
 
-Part 1. Customers Segmentation related to dimensional reduction, clustering and segmentation.
+Part 1. Customers Segmentation related to dimensional reduction, clustering, and segmentation.
 
-Part 2. Predict potential customers related to the problem of imbalamced lable prediciton.
+Part 2. Predict potential customers related to the problem of imbalanced label prediction.
 
 # Datasets
 
@@ -44,11 +44,11 @@ For Part 2., use supervised learning methods to predict the potential customers.
 
 # Benchmark model
 
-For Part 1., PCA for dimenionality reduction; K-mean for cluserting.
+For Part 1., PCA for dimensionality reduction; K-mean for clustering.
 
-For Part 2., Supervised learning models with some adjustment to deal with the issue of imbalanced labels.
+For Part 2., Supervised learning models with some adjustments to deal with the issue of imbalanced labels.
 
 # Evaluation metrics
 
-For Part 1. an valid evaluation metric could be any reasonable decisions from the processing of data, so there is no clear metric to measure the success.
+For Part 1. a valid evaluation metric could be any reasonable decisions from the processing of data, so there is no clear metric to measure the success.
 For Part 2. Since it's a binary classification problem, use AUC as a measurement of models' performance/
