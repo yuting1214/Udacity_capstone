@@ -1,8 +1,12 @@
 # Outline:
 
-Part 1. Customers Segmentation
+Part 1. Customers Segmentation:
+
+Begin the project by using unsupervised learning methods to analyze attributes of established customers and the general population in order to create customer segments.
 
 Part 2. Predict potential customers
+
+Use the previous analysis to build a machine learning model that predicts whether or not each individual will respond to the campaign.
 
 # Domain background
 
