@@ -1,6 +1,6 @@
 # Domain background
 
-Nowadays, numerous e-commerce or sales companies have data about their customers and the access to demographic information for the general population. They're eager to utilize the data to find the relationship between the existing customers and potential customers to reduce the cost of customer acquisition. Since demographic information is usually high-dimensional and intractable, machine learning techniques provide handy and automatic solutions 
+Nowadays, numerous e-commerce or sales companies have data about their customers and access to demographic information for the general population. They're eager to utilize the data to find the relationship between existing customers and potential customers to reduce the cost of customer acquisition. Since demographic information is usually high-dimensional and intractable, machine learning techniques provide handy and automatic solutions 
 to detect the hidden patterns behind the data. These patterns could help them form feasible solutions to promote business.
 
 # Problem Statement
@@ -12,13 +12,13 @@ Part 2. Predict potential customers: related to the problem of imbalanced label 
 # Solution statement
 
 For Part 1.,
-1. Use unsupervised learning methods for dimensionality reduction to extract the transformed features while reduce the numbers of input variables 
+1. Use unsupervised learning methods for dimensionality reduction to extract the transformed features while reducing the number of input variables 
 2. Use unsupervised learning methods to cluster the customers.
-3. Use distance metric to measure the similarities between existing customers and the population.
+3. Use the Euclidean distance metric to measure the similarities between existing customers and the population.
 
 For Part 2., 
-1. Data Preprocessing to adjust the data format applicable for the models.
-2. Over-sampling technique to address the issues of imbalanced lables.
+1. Data Preprocessing to adjust the data format applicable to the models.
+2. Over-sampling technique to address the issues of imbalanced labels.
 3. Supervised learning models to predict the probabilities of becoming potential customers based on preprocessed information.
 
 # Datasets
@@ -50,8 +50,8 @@ For Part 2., Supervised learning models(Tree-based models) with some adjustments
 
 For Part 1.,
 
-1. PCA: proportion of explained variance as metric
-2. K-Mean: Inertia(sum of square of between centers distances)
+1. PCA: proportion of explained variance as a metric
+2. K-Mean: Inertia(sum of the square of between centers distances)
 
 For Part 2. 
 1. Binary classification: AUC(Area Under the ROC Curve) and ROC curve (receiver operating characteristic curve).
@@ -87,5 +87,5 @@ These solutions related to the concepts of AutoML(Autogluon), Anomaly Detection,
     * AutoGluon: automatic machine learning to train models
     * Scikit-learn: use off-the-shelf tree-based models from scikit-learn
     * Ensemble of samplers: use the models with the mechanism to adjust the imbalanced labels during training
-    * Anomaly Detection: transform the original problem, imbalanced classification, as anomaly dection problem.
+    * Anomaly Detection: transform the original problem, imbalanced classification, as an anomaly detection problem.
 
