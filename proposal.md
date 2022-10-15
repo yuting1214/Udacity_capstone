@@ -86,6 +86,7 @@ These solutions related to the concepts of AutoML(Autogluon), Anomaly Detection,
 2. Modeling:
     * AutoGluon: automatic machine learning to train models
     * Scikit-learn: use off-the-shelf tree-based models from scikit-learn
+    * Over-sampling: use SMOTE to create synthetic samples from the minority group to deal with imbalanced labels.
     * Ensemble of samplers: use the models with the mechanism to adjust the imbalanced labels during training
     * Anomaly Detection: transform the original problem, imbalanced classification, as an anomaly detection problem.
 
