@@ -55,4 +55,5 @@ For Part 2., Supervised learning models with some adjustments to deal with the i
 # Evaluation metrics
 
 For Part 1. a valid evaluation metric could be any reasonable decisions from the processing of data, so there is no clear metric to measure the success.
+
 For Part 2. Since it's a binary classification problem, use AUC as a measurement of models' performance/
