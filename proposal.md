@@ -17,7 +17,7 @@ Part 1. Customers Segmentation: related to dimensionality reduction, clustering,
 Part 2. Predict potential customers: related to the problem of imbalanced label prediction.
 
 * Quantifiable: Predict the probabilities of becoming new customers based on demographic information.
-* Measurable: Compare the actual acquired customers and predicted potential customers.
+* Measurable: Compare the number of actual acquired customers and predicted potential customers.
 * Replicable: The trained model could adapt to new incoming data and keep monitoring the model's performance once the model gets deployed.
 
 
