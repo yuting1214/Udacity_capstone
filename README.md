@@ -28,8 +28,11 @@ Once you've chosen a model, you'll use it to make predictions on the campaign da
     * PCA: reduce dimension while keeping the accounted variance
     * Scree plot: Select number of Principle Components
 3. Clustering:
-    * K-mean: Cluster the existing customers
-    * 
+    * K-mean: Cluster the existing customers.(K=5)
+    * Centers: Construct representative centers from the clusters
+4. Categorize population:
+    * Distance: Calculate the distance between the characteristics of each person and centers
+    * Segment: If the closed distance between the centers meet the threshold, assign the cluster to each observation.
 
 # Modeling(Imbalanced classification)
 
