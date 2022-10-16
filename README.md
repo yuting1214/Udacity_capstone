@@ -63,7 +63,17 @@ Summary of model performance.
 |  9 | Anomaly Detection | Filter col, Impute mean & mode, Standard & One... |               Iso Forest |                   None |  NaN | 0.51 | 0.02 |
 | 10 | Anomaly Detection | Filter col, Impute mean & mode, Standard & One... |            One-class SVM |                   None |  NaN | 0.48 | 0.02 |
 
-Based on the table, use CatBoost as the main predictive model when testing new samples.
+* Logistic Regression(index=0) with no imbalanced labels treatment is the benchmark model with 0.65 of AUC and 0.50 of Avg Recall. 
+
+* CatBoost(index=6) as the final predictive model with 0.73 of AUC and 0.70 of Avg Recall.
+
+* Tree-based models with boosting methods(LightGBM, CatBoost, XGBoost) tend to outperform other models.
+
+* When considering the final model, preferring LightGBM and CatBoost to XGBoost, since the first two methods are the lightweight variations of XGBoost model and it means that these two methods could be trained quickly.
+
+* Treating the problem as anomaly detection doesn't necessarily improve the model's performance.
+
+* Autogluon could serve as the first go-to method when modeling.
 
 # Kaggle 
 
